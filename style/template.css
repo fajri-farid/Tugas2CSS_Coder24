@@ -1,0 +1,30 @@
+body {
+  padding: 10px 100px;
+  font-family: roboto, sans-serif;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 0 5px;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: blue;
+}
+
+hr {
+  border-width: 2px;
+}
+
+footer {
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 10px 30px;
+  }
+}

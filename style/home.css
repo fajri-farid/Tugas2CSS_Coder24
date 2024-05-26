@@ -1,0 +1,46 @@
+h2 {
+  font-size: 20px;
+}
+
+#profile {
+  margin: 20px 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#profile h2 {
+  margin-bottom: 0;
+}
+
+#profile img {
+  max-width: 25vh;
+  height: auto;
+}
+
+#profile img:hover {
+  transform: scale(1.05);
+  height: auto;
+}
+
+#information {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#table {
+  padding: 0 100px;
+  text-align: left;
+}
+
+#table #judul {
+  padding: 0 50px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  #table {
+    padding: 0;
+  }
+}
