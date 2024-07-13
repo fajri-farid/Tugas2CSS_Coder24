@@ -135,3 +135,13 @@ h2 {
 }
 
 /* text animation end */
+
+/* dark mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+body.dark-mode p {
+  color: #fff;
+}

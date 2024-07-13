@@ -1,3 +1,7 @@
+#aboutme {
+  margin: 0.5rem 2rem;
+}
+
 #aboutme h2 {
   text-align: center;
 }
@@ -24,6 +28,24 @@
   padding-left: 10px;
 }
 
+.medsos a {
+  color: black;
+}
+
 .medsos i:hover {
   transform: scale(1.1);
+}
+
+/* dark mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+body.dark-mode p {
+  color: #fff;
+}
+
+body.dark-mode .medsos a {
+  color: rgb(255, 255, 255);
 }
