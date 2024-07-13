@@ -6,6 +6,11 @@
   text-align: center;
 }
 
+#aboutme p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
 #sosmed {
   text-align: center;
 }
