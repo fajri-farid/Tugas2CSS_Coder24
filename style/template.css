@@ -23,12 +23,12 @@ nav {
 
 #kanan p {
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 #kanan img {
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 .nav {
@@ -42,7 +42,7 @@ nav a {
   text-decoration: none;
   color: black;
   margin-bottom: 5px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 nav a:hover {
@@ -57,7 +57,7 @@ nav a:hover {
 }
 
 #kiri i {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 /* header style end */
