@@ -1,3 +1,11 @@
+/* Code js ini ngehandle:
+  - dark/light mode
+    -> tombol dark/mode ketika di klik dia akan nambahin class di body
+       classnya itu "dark-mode", sehingga bisa dipake untuk styling ketika "dark-mode itu ada"
+    -> juga ngehandle warna dari icon dark/light-nya agar sesuai dark/white
+  - humburger menu
+*/
+
 const modeToggle = document.getElementById("modeToggle");
 const sideModeToggle = document.getElementById("sideModeToggle");
 const sideNavbar = document.getElementById("sideNavbar");
