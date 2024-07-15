@@ -1,4 +1,6 @@
-const modeToggle = document.getElementById("modeToggle"); // id icon-nya
+const modeToggle = document.getElementById("modeToggle");
+const sideModeToggle = document.getElementById("sideModeToggle");
+const sideNavbar = document.getElementById("sideNavbar");
 
 function setMode(mode) {
   document.body.classList.toggle("dark-mode", mode === "dark");
@@ -6,10 +8,16 @@ function setMode(mode) {
     modeToggle.classList.remove("fa-moon");
     modeToggle.classList.add("fa-sun");
     modeToggle.style.color = "#ffffff";
+    sideModeToggle.classList.remove("fa-moon");
+    sideModeToggle.classList.add("fa-sun");
+    sideModeToggle.style.color = "#000000";
   } else {
     modeToggle.classList.remove("fa-sun");
     modeToggle.classList.add("fa-moon");
     modeToggle.style.color = "#000000";
+    sideModeToggle.classList.remove("fa-sun");
+    sideModeToggle.classList.add("fa-moon");
+    sideModeToggle.style.color = "#ffffff";
   }
 }
 
@@ -18,6 +26,7 @@ if (savedMode) {
   setMode(savedMode);
 }
 
+// main light/dark
 modeToggle.addEventListener("click", function () {
   const isDarkMode = document.body.classList.toggle("dark-mode");
   const mode = isDarkMode ? "dark" : "light";
@@ -25,13 +34,20 @@ modeToggle.addEventListener("click", function () {
   localStorage.setItem("mode", mode);
 });
 
-// navbar responsif
+// responsif light/dark
+sideModeToggle.addEventListener("click", function () {
+  const isDarkMode = document.body.classList.toggle("dark-mode");
+  const mode = isDarkMode ? "dark" : "light";
+  setMode(mode);
+  localStorage.setItem("mode", mode);
+});
+
+// Navbar responsive functionality
 const menuIcon = document.getElementById("menuIcon");
 const closeIcon = document.getElementById("closeIcon");
-const sideNavbar = document.getElementById("sideNavbar");
 
 menuIcon.addEventListener("click", () => {
-  sideNavbar.classList.toggle("menu-active");
+  sideNavbar.classList.add("menu-active");
 });
 
 closeIcon.addEventListener("click", () => {
