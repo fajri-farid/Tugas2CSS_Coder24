@@ -63,3 +63,9 @@ body.dark-mode {
 body.dark-mode p {
   color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+  .content{
+    margin: 0.5rem 1rem;
+  }
+}
