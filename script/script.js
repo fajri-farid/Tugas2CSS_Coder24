@@ -24,3 +24,16 @@ modeToggle.addEventListener("click", function () {
   setMode(mode);
   localStorage.setItem("mode", mode);
 });
+
+// navbar responsif
+const menuIcon = document.getElementById("menuIcon");
+const closeIcon = document.getElementById("closeIcon");
+const sideNavbar = document.getElementById("sideNavbar");
+
+menuIcon.addEventListener("click", () => {
+  sideNavbar.classList.toggle("menu-active");
+});
+
+closeIcon.addEventListener("click", () => {
+  sideNavbar.classList.remove("menu-active");
+});
